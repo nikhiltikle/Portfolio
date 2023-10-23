@@ -95,7 +95,7 @@ const Footer = () => {
           </a>
           <a
             className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link'
+            href='/resume.pdf'
             target='_blank'
             rel='noopener noreferrer'
           >
