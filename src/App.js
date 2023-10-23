@@ -1,9 +1,12 @@
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import React, { Suspense } from "react";
-import { NotFound, Loader, ScrollToTop, ProjectDetails, Navbar, Footer, BlogDetail, BlogIndex, MernBlogRepair, EmployeeSalaryManagementRepair } from "./components";
+import { NotFound, Loader, ScrollToTop, ProjectDetails, Navbar, Footer, BlogDetail, BlogIndex, MernBlogRepair, EmployeeSalaryManagementRepair, } from "./components";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import ServicePage from "./pages/ServicePage";
+import Resume from "./pages/Resume";
+
 const Home = React.lazy(() => import("./pages/Home"));
 const Project = React.lazy(() => import("./pages/Project"));
 
@@ -21,6 +24,9 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={< ServicePage />} />
+          <Route path="/resume" element={< Resume />} />
+          
           <Route path="/blog" element={<Blog />}>
             <Route index element={<BlogIndex />} />
             <Route path=":blog_path" element={<BlogDetail />} />
