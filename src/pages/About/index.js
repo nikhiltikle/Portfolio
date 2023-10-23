@@ -8,6 +8,14 @@ import { BottomLine, MySkill, Education } from '../../components';
 import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
+  const pdfURL = 'resume.pdf'; // URL to your PDF
+
+  const downloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = pdfURL;
+    link.download = 'resume_nikhil_tikle.pdf'; // Specify the filename for the downloaded file
+    link.click();
+  };
   return (
     <div className='parent pt-16 my-16'>
       <div className=''>
@@ -106,19 +114,16 @@ const About = () => {
                 <span className='mr-2 text-primary'>Address : </span>Karawang,
                 Jawa Barat, Indonesia
               </h2>
-              <a
-                href='https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link'
-                target='blank'
-              >
+             
                 <div className='flex justify-center md:justify-start translate-y-[60%] sm:translate-y-[-0%]'>
-                  <button className='primary-button'>
+                  <button className='primary-button' onClick={downloadPDF}>
                     <span>My Resume</span>
                     <span>
                       <FaDownload />
                     </span>
                   </button>
                 </div>
-              </a>
+              
             </div>
           </motion.div>
         </div>
