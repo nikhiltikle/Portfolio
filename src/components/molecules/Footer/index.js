@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='flex items-center justify-center mb-6'>
           <a
             className='inline-block mx-4'
-            href='https://linkedin.com/in/gilnikhiltikle'
+            href='https://www.linkedin.com/in/nikhiltikle/'
             target='_blank'
             rel='noopener noreferrer'
           >
