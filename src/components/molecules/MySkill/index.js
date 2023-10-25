@@ -6,16 +6,21 @@ import {
   FaNodeJs,
   FaReact,
   FaBootstrap,
-  FaGithub,
+  FaGithub
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
-  SiExpress,
-  SiMongodb,
-  SiAdobephotoshop,
-  SiFirebase,
+  SiSonarcloud,
+  SiGit,
+  SiJira,
+  SiRedux,
+  SiTestinglibrary,
+  SiEslint,
+  SiPrettier,
+  SiVisualstudiocode
 } from "react-icons/si";
+import {AiOutlineApi} from "react-icons/ai";
 import man from "../../../assets/man.json";
 
 const MySkill = () => {
@@ -32,16 +37,21 @@ const MySkill = () => {
     { title: "React", icon: <FaReact className="text-cyan-400" /> },
     { title: "Bootstrap", icon: <FaBootstrap className="text-indigo-600" /> },
     { title: "Tailwind", icon: <SiTailwindcss className="text-cyan-400" /> },
-    { title: "ExpressJS", icon: <SiExpress className="text-neutral" /> },
+    { title: "Redux", icon: <SiRedux classname="text-purple-600"/> },
+    { title: "Material UI", icon: <img width={40} src="mui.png" alt="mui" /> },
   ];
   const tools = [
-    { title: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+    { title: "Jira", icon: <SiJira className="text-blue-600" /> },
     { title: "GitHub", icon: <FaGithub className="text-black" /> },
-    { title: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
-    {
-      title: "Photoshop",
-      icon: <SiAdobephotoshop className="text-cyan-800" />,
-    },
+    { title: "Git", icon: <SiGit className="text-red-500" /> },
+    {title: "Sonar", icon: <SiSonarcloud className="text-blue-600" />},
+    {title: "EsLint", icon: <SiEslint className="text-purple-600" />},
+    {title: "Prettier", icon: <SiPrettier className="text-white" />},
+    {title: "VS Code", icon: <SiVisualstudiocode className="text-blue-600" />},
+  ];
+  const other = [
+    { title: "Rest API's", icon: <AiOutlineApi className="text-blue-500" /> },
+    { title: "Unit Testing", icon: <SiTestinglibrary className="text-red-400" /> },
   ];
 
   const defaultOptions = {
@@ -65,10 +75,12 @@ const MySkill = () => {
             {languages?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
                 <div
-                  className="rounded-lg h-12 w-12 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
-                  title={skill.title}
+                  className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
-                  {skill?.icon}
+                  <div className="flex flex-col justify-center items-center space-y-2">
+                    {skill?.icon}
+                    <p className="text-xs">{skill.title}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -80,10 +92,12 @@ const MySkill = () => {
             {frameworks?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
                 <div
-                  className="rounded-lg h-12 w-12 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
-                  title={skill.title}
+                  className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
-                  {skill?.icon}
+                  <div className="flex flex-col justify-center items-center space-y-2">
+                    {skill?.icon}
+                    <p className="text-xs">{skill.title}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -95,10 +109,29 @@ const MySkill = () => {
             {tools?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
                 <div
-                  className="rounded-lg h-12 w-12 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
-                  title={skill.title}
+                  className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
-                  {skill?.icon}
+                  <div className="flex flex-col justify-center items-center space-y-2">
+                    {skill?.icon}
+                    <p className="text-xs">{skill.title}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2 className="text-cyan-500 text-xl font-semibold">
+            Other:
+          </h2>
+          <div className="flex flex-wrap mb-4">
+            {other?.map((skill) => (
+              <div key={skill.title} className="text-center m-3">
+                <div
+                  className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
+                >
+                  <div className="flex flex-col justify-center items-center space-y-2">
+                    {skill?.icon}
+                    <p className="text-xs">{skill.title}</p>
+                  </div>
                 </div>
               </div>
             ))}
