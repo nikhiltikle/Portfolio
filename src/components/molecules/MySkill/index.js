@@ -73,7 +73,7 @@ const MySkill = () => {
           <h2 className="text-cyan-500 text-xl font-semibold">Languages:</h2>
           <div className="flex flex-wrap mb-4">
             {languages?.map((skill) => (
-              <div key={skill.title} className="text-center m-3">
+              <div key={skill.title} className="text-center m-2">
                 <div
                   className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
@@ -90,7 +90,7 @@ const MySkill = () => {
           </h2>
           <div className="flex flex-wrap mb-4">
             {frameworks?.map((skill) => (
-              <div key={skill.title} className="text-center m-3">
+              <div key={skill.title} className="text-center m-2">
                 <div
                   className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
@@ -107,7 +107,7 @@ const MySkill = () => {
           </h2>
           <div className="flex flex-wrap mb-4">
             {tools?.map((skill) => (
-              <div key={skill.title} className="text-center m-3">
+              <div key={skill.title} className="text-center m-2">
                 <div
                   className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
@@ -124,7 +124,7 @@ const MySkill = () => {
           </h2>
           <div className="flex flex-wrap mb-4">
             {other?.map((skill) => (
-              <div key={skill.title} className="text-center m-3">
+              <div key={skill.title} className="text-center m-2">
                 <div
                   className="rounded-lg h-20 w-20 hover:-translate-y-2 duration-300 flex items-center justify-center text-3xl cursor-pointer shadow-lg hover:shadow-xl bg-[#313131] hover:bg-[#262626] mx-auto"
                 >
