@@ -151,7 +151,7 @@ const Contact = () => {
             <FaLocationArrow className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaLocationArrow>
 
             <h3 className='font-medium text-primary'>
-            Sudama Nagar Indore, Madhya Pradesh
+              Indore, India (452009)
             </h3>
           </div>
           <div className='mt-8 flex items-center'>
