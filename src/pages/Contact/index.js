@@ -5,12 +5,9 @@ import '../shared/Shared.css';
 import { motion, useAnimation } from 'framer-motion';
 import {
   FaUserAlt,
-  FaPhoneAlt,
   FaLocationArrow,
   FaLinkedin,
   FaGithubSquare,
-  FaTwitterSquare,
-  FaInstagramSquare,
 } from 'react-icons/fa';
 import { MdEmail, MdSend } from 'react-icons/md';
 import emailjs from '@emailjs/browser';
@@ -39,10 +36,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_6xnj05v',
-        'template_exk29f8',
+        'service_p4ki7od',
+        'template_dkc6tfn',
         form.current,
-        'kLfLk-o6LKj-L9c77'
+        'MaaA5dYfvKXck7gdm'
       )
       .then(
         (result) => {
@@ -144,53 +141,35 @@ const Contact = () => {
           <h2 className='text-2xl font-medium'>Contact Info</h2>
           <div className='flex items-center my-6'>
             <FaUserAlt className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaUserAlt>
-            <h3 className='font-medium text-primary'>Gilbert Hutapea</h3>
+            <h3 className='font-medium text-primary'>Nikhil Tikle</h3>
           </div>
           <div className='flex items-center my-6'>
-            <FaPhoneAlt className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaPhoneAlt>
-            <h3 className='font-medium text-primary'>+62 823 6148 4992</h3>
-          </div>
-          <div className='flex items-center my-6'>
-            <MdEmail className='text-3xl mr-8 hover:text-primary cursor-pointer duration-300'></MdEmail>
-            <h3 className='font-medium text-primary'>nikhiltikle@gmail.com</h3>
+            <MdEmail className='text-3xl mr-7 hover:text-primary cursor-pointer duration-300'></MdEmail>
+            <h3 className='font-medium text-primary'>nikhiltikle31@gmail.com</h3>
           </div>
           <div className='flex items-center my-6'>
             <FaLocationArrow className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaLocationArrow>
 
             <h3 className='font-medium text-primary'>
-              Karawang, Jawa Barat, Indonesia
+              Indore, India (452009)
             </h3>
           </div>
           <div className='mt-8 flex items-center'>
             <h3 className='text-xl text-neutral'>Social</h3>
             <div className='bg-gray-400 w-10 h-[2px] mx-4'></div>
             <a
-              href='https://linkedin.com/in/gilnikhiltikle'
+              href='https://www.linkedin.com/in/nikhiltikle/'
               target='blank'
               className='text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300'
             >
               <FaLinkedin></FaLinkedin>
             </a>
             <a
-              href='https://www.github.com/nikhiltikle'
+              href='https://github.com/nikhiltikle'
               target='blank'
               className='text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300'
             >
               <FaGithubSquare></FaGithubSquare>
-            </a>
-            <a
-              href='https://twitter.com/Gilnikhiltiklea'
-              target='blank'
-              className='text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300'
-            >
-              <FaTwitterSquare></FaTwitterSquare>
-            </a>
-            <a
-              href='https://www.instagram.com/bethup97/'
-              target='blank'
-              className='text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300'
-            >
-              <FaInstagramSquare></FaInstagramSquare>
             </a>
           </div>
         </motion.div>
