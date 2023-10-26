@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub} from 'react-icons/fa';
 
 const Footer = () => {
   const year = new Date();
@@ -12,94 +12,20 @@ const Footer = () => {
       >
         <div className='flex items-center justify-center mb-6'>
           <a
-            className='inline-block mx-2'
-            href='https://twitter.com/Gilnikhiltiklea'
+            className='inline-block mx-4'
+            href='https://www.linkedin.com/in/nikhiltikle/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter className='text-2xl text-blue-600' />
+            <FaLinkedin className='text-3xl text-blue-400' />
           </a>
           <a
-            className='inline-block mx-2'
-            href='https://linkedin.com/in/gilnikhiltikle'
+            className='inline-block mx-4'
+            href='https://github.com/nikhiltikle'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin className='text-2xl text-blue-400' />
-          </a>
-          <a
-            className='inline-block mx-2'
-            href='https://www.github.com/nikhiltikle'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaGithub className='text-2xl text-black' />
-          </a>
-          <a
-            className='inline-block mx-2'
-            href='https://www.instagram.com/bethup97/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaInstagram className='text-2xl text-pink-500' />
-          </a>
-        </div>
-        <div className='hidden  md:flex items-center justify-center mb-6 flex-wrap'>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://www.fiverr.com/nikhiltikle'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Fiverr
-          </a>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://www.upwork.com/freelancers/~0171c0d54d5dea86ec'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            UpWork
-          </a>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='http://freelancer.com/u/nikhiltikle'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Freelancer
-          </a>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://themeforest.net/user/nikhiltikle'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            ThemeForest
-          </a>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://remotehub.com/gilbert.hutapea'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            RemoteHub
-          </a>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://dribbble.com/nikhiltikle'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Dribbble
-          </a>
-          <a
-            className='text-xl inline-bloc mx-6 text-neutral'
-            href='https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Resume
+            <FaGithub className='text-3xl text-black' />
           </a>
         </div>
 
@@ -109,11 +35,11 @@ const Footer = () => {
           <p>
             Developed by{' '}
             <a
-              href='https://linkedin.com/in/gilnikhiltikle'
+              href='https://www.linkedin.com/in/nikhiltikle/'
               className='text-primary hover:underline'
               target='blank'
             >
-              Gilbert Hutapea
+              Nikhil Tikle
             </a>
           </p>
         </div>
