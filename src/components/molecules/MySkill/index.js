@@ -138,7 +138,7 @@ const MySkill = () => {
           </div>
         </div>
         <div>
-          <Lottie options={defaultOptions} height={400} width={360} />
+          <Lottie options={defaultOptions} height={400} width={320} />
         </div>
       </div>
     </div>
