@@ -24,11 +24,11 @@ const Banner = () => {
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">Hello, I'm</h2>
-        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">Nikhil Tikle</h1>
+        <h2 className="text-neutral ml-2 text-xl font-medium translate-y-[-30%] sm:translate-y-[-0%]">Hello, I'm</h2>
+        <h1 className="text-4xl ml-2 font-semibold mb-0 translate-y-[-10%] sm:translate-y-[-0%]">Nikhil Tikle</h1>
         <div className="my-4">
           <TypeAnimation
-            className="text-2xl text-primary font-bold translate-y-[-80%] sm:translate-y-[-0%]"
+            className="text-2xl ml-2 text-primary font-bold translate-y-[-50%] sm:translate-y-[-0%]"
             cursor={true}
             sequence={[
               "A Front-end Developer",
@@ -42,11 +42,9 @@ const Banner = () => {
             repeat={Infinity}
           />
         </div>
-        <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
+        <p className="text-neutral ml-2 max-w-xl mb-6 font-medium translate-y-[-10%] sm:translate-y-[-0%]">
         Front-end developer with 7+ years experience in crafting responsive web design. Proficient in Redux, HTML/CSS, ReactJS, NextJS, JavaScript, Figma-UI, AdobeXD UI/UX. Specializes in UI/UX-focused web development. <br />
           With a proven history of surpassing client expectations and a drive to continually enhance my skill set, I eagerly anticipate embracing new challenges and further elevating my proficiency in the field.
-          {/* I am a Front-end Developer. I am very passionate to my work and
-          dedicated to explore New Tools And Technologies. */}
         </p>
         <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">
           <a
