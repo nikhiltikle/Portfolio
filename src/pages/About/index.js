@@ -78,7 +78,7 @@ const About = () => {
               solutions drives me to stay up-to-date with the latest
               technologies and trends in the industry.
             </p>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4 mt-4 text-left ml-2 translate-y-[-150%] sm:translate-y-[-0%] sm:mb-2 md:text-left ' id='address'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4 mt-2 text-left ml-2 translate-y-[-150%] sm:translate-y-[-0%] sm:mb-2 md:text-left ' id='address'>
               <h2 className='font-medium'>
                 <span className='mr-2 text-primary'>Email : </span>
                 nikhiltikle31@gmail.com
