@@ -10,7 +10,6 @@ import {
 import { BottomLine } from "../../components";
 import { services } from "../../constants/service.js";
 
-
 const ServicePage = () => {
   const [ref, inView] = useInView();
   const [viewDiv, setViewDiv] = useState(false);
@@ -25,10 +24,8 @@ const ServicePage = () => {
     }
   }, [inView, animation]);
 
- 
   return (
     <div className="py-20 parent"
-    // style={{ backgroundColor: "#313131" }}
     >
       <motion.div
         className="mb-12"

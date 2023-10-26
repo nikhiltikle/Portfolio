@@ -9,7 +9,7 @@ import {
   headingAnimation,
   sectionBodyAnimation,
 } from "../../hooks/useAnimation";
-import {BottomLine} from "../../components";
+import { BottomLine } from "../../components";
 
 const Project = () => {
   const [items, setItems] = useState(Items);
@@ -65,8 +65,9 @@ const Project = () => {
         >
           <div className="mt-6 mb-2 flex items-center justify-center flex-wrap">
             <button
-              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${activeBtn === "all" && "active-btn"
-                }`}
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "all" && "active-btn"
+              }`}
               onClick={() => {
                 setActiveBtn("all");
                 location.pathname === "/"
@@ -77,8 +78,9 @@ const Project = () => {
               All
             </button>
             <button
-              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${activeBtn === "business" && "active-btn"
-                }`}
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "business" && "active-btn"
+              }`}
               onClick={() => {
                 setActiveBtn("business");
                 filterItem("business");
@@ -87,8 +89,9 @@ const Project = () => {
               Business
             </button>
             <button
-              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${activeBtn === "personal" && "active-btn"
-                }`}
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "personal" && "active-btn"
+              }`}
               onClick={() => {
                 setActiveBtn("personal");
                 filterItem("personal");
@@ -97,19 +100,18 @@ const Project = () => {
               Personal
             </button>
             <button
-            className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
-              activeBtn === "game" && "active-btn"
-            }`}
-            onClick={() => {
-              setActiveBtn("game");
-              filterItem("game");
-            }}
-          >
-            Game
-          </button>
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "game" && "active-btn"
+              }`}
+              onClick={() => {
+                setActiveBtn("game");
+                filterItem("game");
+              }}
+            >
+              Game
+            </button>
           </div>
 
-          {/* Items Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {items.map((item) => (
               <motion.div

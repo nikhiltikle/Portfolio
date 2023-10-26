@@ -9,7 +9,6 @@ import coding from "../../../assets/coding.json";
 import "../../../pages/shared/Shared.css";
 import { SecondaryBtn } from "../../../components";
 
-
 const Banner = () => {
   const defaultOptions = {
     loop: true,
@@ -19,14 +18,14 @@ const Banner = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const pdfURL = 'resume.pdf'; // URL to your PDF
-
+  const pdfURL = "resume.pdf"; // URL to your PDF
   const downloadPDF = () => {
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = pdfURL;
-    link.download = 'resume_nikhil_tikle.pdf'; // Specify the filename for the downloaded file
+    link.download = "resume_nikhil_tikle.pdf"; // Specify the filename for the downloaded file
     link.click();
   };
+
   return (
     <div className="parent min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between">
       <motion.div
@@ -34,11 +33,13 @@ const Banner = () => {
         animate={{ x: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">Hello, I'm</h2>
-        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">Gilbert Hutapea</h1>
+        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">
+          Hello, I'm
+        </h2>
+        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">
+          Gilbert Hutapea
+        </h1>
         <div className="my-4">
-
-
           <TypeAnimation
             className="text-2xl text-primary font-bold translate-y-[-80%] sm:translate-y-[-0%]"
             cursor={true}
@@ -52,7 +53,6 @@ const Banner = () => {
             ]}
             wrapper="div"
             repeat={Infinity}
-
           />
         </div>
         <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
@@ -61,15 +61,10 @@ const Banner = () => {
           experience in full-stack web development, I specialize in using
           React.js, Next js, Typescript, MongoDB, Express.js, and Node.js to
           create scalable and robust web applications.
-          {/* I am a Front-end Developer. I am very passionate to my work and
-          dedicated to explore New Tools And Technologies. */}
         </p>
 
-
         <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">
-
           <button className="primary-button" onClick={downloadPDF}>
-
             <span>My Resume</span>
             <span>
               <FaDownload />

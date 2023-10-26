@@ -50,7 +50,7 @@ export const services = [
     ,
   },
   {
-    id: 6,
+    id: 7,
     title: "Performance Optimization",
     icon: <CgPerformance />,
     description: "Within the domain of Performance Optimization, I excel in the art of refining digital experiences for peak speed and efficiency. My portfolio exemplifies a history of elevating website and application performance through methodical analysis, strategic enhancements, and judicious resource allocation. My dedication lies in providing seamless, high-velocity digital solutions that captivate and retain users."

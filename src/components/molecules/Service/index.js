@@ -23,11 +23,12 @@ const Service = () => {
       setViewDiv(false);
     }
   }, [inView, animation]);
-  const firstThreeServices = services.slice(0, 3);
- 
+  // const firstThreeServices = services.slice(0, 3);
+
   return (
-    <div className="py-20 parent"
-    // style={{ backgroundColor: "#313131" }}
+    <div
+      className="py-20 parent"
+      // style={{ backgroundColor: "#313131" }}
     >
       <motion.div
         className="mb-12"
@@ -49,13 +50,14 @@ const Service = () => {
         animate={viewDiv && "visible"}
         variants={sectionBodyAnimation}
       >
-        {firstThreeServices?.map((service) => (
+        {services.slice(0, 3).map((service) => (
           <div
             key={service.id}
-            className={`${service.id % 2 === 0
-              ? "bg-accent shadow-lg"
-              : "bg-[#313131] shadow-md"
-              } rounded-lg p-6 hover:shadow-primary cursor-pointer duration-300`}
+            className={`${
+              service.id % 2 === 0
+                ? "bg-accent shadow-lg"
+                : "bg-[#313131] shadow-md"
+            } rounded-lg p-6 hover:shadow-primary cursor-pointer duration-300`}
           >
             <div className="mb-4 text-center">
               <span className="inline-block text-5xl text-primary">
@@ -70,22 +72,21 @@ const Service = () => {
         ))}
       </motion.div>
       {location.pathname === "/" && (
-          <div className="mt-4 text-right">
-            <Link
-              to="/services"
-              className="text-2xl hover:text-primary duration-300"
-            >
-              <button className="primary-button">
-                <span>See All</span>
-                <span>
-                  <FiArrowRight />
-                </span>
-              </button>
-            </Link>
-          </div>
-        )}
+        <div className="mt-4 text-right">
+          <Link
+            to="/services"
+            className="text-2xl hover:text-primary duration-300"
+          >
+            <button className="primary-button">
+              <span>See All</span>
+              <span>
+                <FiArrowRight />
+              </span>
+            </button>
+          </Link>
+        </div>
+      )}
     </div>
-    
   );
 };
 
