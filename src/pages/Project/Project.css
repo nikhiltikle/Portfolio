@@ -2,23 +2,19 @@
   color: #ff651c;
   background-color: transparent;
 }
-
 .item-container {
   height: 400px;
   overflow: hidden;
 }
-
 .item {
   background: transparent;
   position: relative;
 }
-
 .item img {
   opacity: 1;
   transition: opacity 0.35s;
   object-fit: cover;
 }
-
 .item .overlay {
   position: absolute;
   top: 15px;
@@ -36,13 +32,11 @@
   -webkit-transform: scale3d(1.4, 1.4, 1);
   transform: scale3d(1.4, 1.4, 1);
 }
-
 .item:hover .overlay {
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
-
 .item:hover .overlay {
   display: flex;
   align-items: center;
@@ -50,11 +44,9 @@
   flex-direction: column;
   background-color: #313131;
 }
-
 .item:hover img {
   opacity: 0.8;
 }
-
 .project_image {
   display: inline-block;
   width: 100%;

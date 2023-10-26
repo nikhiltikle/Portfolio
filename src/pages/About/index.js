@@ -108,7 +108,6 @@ const About = () => {
                 <span className="mr-2 text-primary">Address : </span>Karawang,
                 Jawa Barat, Indonesia
               </h2>
-
               <div className="flex justify-center md:justify-start translate-y-[60%] sm:translate-y-[-0%]">
                 <button className="primary-button" onClick={downloadPDF}>
                   <span>My Resume</span>
@@ -121,9 +120,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-
       <MySkill />
-
       <Education />
     </div>
   );

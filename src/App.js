@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import React, { Suspense } from "react";
-import { NotFound, Loader, ScrollToTop, ProjectDetails, Navbar, Footer, BlogDetail, BlogIndex, MernBlogRepair, EmployeeSalaryManagementRepair, } from "./components";
+import { NotFound, Loader, ScrollToTop, ProjectDetails, Navbar, Footer, BlogDetail, BlogIndex, MernBlogRepair, EmployeeSalaryManagementRepair} from "./components";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -27,7 +27,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={< ServicePage />} />
           <Route path="/resume" element={< Resume />} />
-          
           <Route path="/blog" element={<Blog />}>
             <Route index element={<BlogIndex />} />
             <Route path=":blog_path" element={<BlogDetail />} />

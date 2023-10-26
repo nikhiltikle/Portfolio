@@ -23,12 +23,10 @@ const Service = () => {
       setViewDiv(false);
     }
   }, [inView, animation]);
-  // const firstThreeServices = services.slice(0, 3);
-
+  
   return (
     <div
       className="py-20 parent"
-      // style={{ backgroundColor: "#313131" }}
     >
       <motion.div
         className="mb-12"

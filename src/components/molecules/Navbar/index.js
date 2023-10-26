@@ -28,15 +28,12 @@ export default function Navbar() {
     { title: "Blog", link: "/blog", icon: <ImBlog /> },
     { title: "Resume", link: "/resume", icon: <ImBlog /> },
   ];
-
-  
   const activeLink = ({ isActive }) => {
     return {
       fontWeight: 500,
       color: isActive && "#FF651C",
     };
   };
-
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   useEffect(() => {
