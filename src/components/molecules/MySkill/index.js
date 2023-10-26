@@ -63,14 +63,14 @@ const MySkill = () => {
     },
   };
   return (
-    <div className="pt-24">
+    <div className="pt-8 sm:pt-24">
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-evenly my-8">
 
         <div>
-          <h2 className="text-cyan-500 text-xl font-semibold">Languages:</h2>
+          <h2 className="text-cyan-500 text-xl ml-2 font-semibold">Languages:</h2>
           <div className="flex flex-wrap mb-4">
             {languages?.map((skill) => (
               <div key={skill.title} className="text-center m-2">
@@ -85,7 +85,7 @@ const MySkill = () => {
               </div>
             ))}
           </div>
-          <h2 className="text-cyan-500 text-xl font-semibold">
+          <h2 className="text-cyan-500 text-xl ml-2 font-semibold">
             Library & Frameworks:
           </h2>
           <div className="flex flex-wrap mb-4">
@@ -102,7 +102,7 @@ const MySkill = () => {
               </div>
             ))}
           </div>
-          <h2 className="text-cyan-500 text-xl font-semibold">
+          <h2 className="text-cyan-500 text-xl ml-2 font-semibold">
             Tools & Technologies:
           </h2>
           <div className="flex flex-wrap mb-4">
@@ -119,7 +119,7 @@ const MySkill = () => {
               </div>
             ))}
           </div>
-          <h2 className="text-cyan-500 text-xl font-semibold">
+          <h2 className="text-cyan-500 text-xl ml-2 font-semibold">
             Other:
           </h2>
           <div className="flex flex-wrap mb-4">
