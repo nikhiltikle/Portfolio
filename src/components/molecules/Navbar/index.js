@@ -145,7 +145,7 @@ export default function Navbar() {
               </ul>
               <div className="text-center">
                 <p className="text-neutral">
-                  &copy; Copyright 2023, Gilbert Hutapea. All Rights Reserved
+                  &copy; Copyright 2023, Nikhil Tikle. <br />All Rights Reserved
                 </p>
               </div>
             </Drawer>
