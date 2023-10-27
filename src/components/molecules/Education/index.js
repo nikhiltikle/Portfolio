@@ -1,7 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
 import readingBook from "../../../assets/reading-book.json";
-
 const Education = () => {
   const defaultOptions = {
     loop: true,
@@ -15,7 +14,7 @@ const Education = () => {
     <div className="pt-24">
       <div className="mb-12">
         <h1 className="text-4xl font-semibold drop-shadow-md text-center">
-          My <span className="text-primary">Qualification</span>
+          My <span className="text-primary">Experience</span>
         </h1>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
@@ -28,42 +27,41 @@ const Education = () => {
           />
         </div>
         <div className="mx-auto lg:ml-auto">
-          {/* Diploma */}
+          {/* senior developer */}
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg inline-block w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">
-                Diploma in CSE
+              <h3 className="text-xl font-semibold text-primary">
+                Senior Frontend Developer
               </h3>
-              <p className="text-sm text-neutral font-semibold">2021 - 2025</p>
+              <p className="text-sm text-neutral font-semibold">Webonex Technology <br /></p>
+              <p className="text-sm text-neutral ">2022-Present</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I am currently studying in Informatics Engineering (4th Semester) at Sekolah Tinggi Teknologi Informatika Sony Sugema, Karawang, Jawa Barat, Indonesia
+            Many applications was architected and set up from scratch, with the implementation of various features and tools. Complex software issues, including performance optimizations, memory management, and network communication problems, were addressed to enhance overall stability and performance.
             </p>
           </div>
-
           {/* React Developer */}
           <div className="my-6 md:my-4 md:ml-[200px] p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">
+              <h3 className="text-xl font-semibold text-primary">
                 React Developer
               </h3>
-              <p className="text-sm text-neutral font-semibold">2023</p>
+              <p className="text-sm text-neutral font-semibold">Webonex Technology <br /></p>
+              <p className="text-sm text-neutral ">2019-2022</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have successfully completed the <b>React Web Developer Expert</b>{" "}
-              from Dicoding.
+            Improvements to the user experience of a business product were executed, integrating theming into one application with four distinct themes. Collaboration with designers and engineers transformed creative concepts into production realities. Code reviews and peer programming sessions ensured code quality and adherence to standards.
             </p>
           </div>
-
-          {/* SSC */}
+          {/* TCS */}
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">SSC</h3>
-              <p className="text-sm text-neutral font-semibold">2018 - 2021</p>
+              <h3 className="text-xl font-semibold text-primary">System Engineer</h3>
+              <p className="text-sm text-neutral font-semibold">Tata Consultancy Services <br /></p>
+              <p className="text-sm text-neutral ">2016-2019</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have passed the Senior Secondary Certificate (SSC) with the
-              highest result <b>GPA - 88</b>
+            Progressive web applications are maintained and enhanced by me in React.js, Redux, JavaScript, and Git. Technical issues are addressed, and applications are customized based on client needs within an Agile development team.
             </p>
           </div>
         </div>
@@ -71,5 +69,4 @@ const Education = () => {
     </div>
   );
 };
-
 export default Education;
