@@ -1,28 +1,31 @@
-import React from 'react';
-import TypeAnimation from 'react-type-animation';
-import { motion } from 'framer-motion';
+import React from "react";
+import TypeAnimation from "react-type-animation";
+import { motion } from "framer-motion";
+import "./About.css";
+import "../../components/atoms/PrimaryBtn/PrimaryBtn.css";
+import "../shared/Shared.css";
+import { BottomLine, MySkill, Education } from "../../components";
 import Lottie from "react-lottie";
-import './About.css';
-import '../../components/atoms/PrimaryBtn/PrimaryBtn.css';
 import aboutphoto from "../../assets/animation_lo2tfpm5.json";
-import '../shared/Shared.css';
-import { BottomLine, MySkill, Education } from '../../components';
+
+
 const About = () => {
+  
   return (
-    <div className='parent pt-16 my-16'>
-      <div className=''>
+    <div className="parent pt-16 my-16">
+      <div className="">
         <motion.div
-          className='mb-10'
+          className="mb-10"
           initial={{ y: -200, opacity: 0 }}
           animate={{
             y: 0,
             opacity: 1,
-            transition: { duration: 1, type: 'spring' },
+            transition: { duration: 1, type: "spring" },
           }}
         >
-          <h3 className='text-neutral text-center'>Something About Myself</h3>
-          <h1 className='text-4xl font-semibold drop-shadow-md text-center'>
-            About <span className='text-primary'>Me</span>
+          <h3 className="text-neutral text-center">Something About Myself</h3>
+          <h1 className="text-4xl font-semibold drop-shadow-md text-center">
+            About <span className="text-primary">Me</span>
           </h1>
           <BottomLine />
         </motion.div>
@@ -53,7 +56,7 @@ const About = () => {
             <h1 className='text-4xl font-semibold mb-4 text-center translate-y-[-300%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left'>
               Nikhil Tikle
             </h1>
-            <div className='my-8'>
+            <div className="my-8">
               <TypeAnimation
                 className='text-2xl text-primary font-bold text-left ml-2 translate-y-[-450%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-2 md:text-left'
                 cursor={true}
@@ -65,7 +68,7 @@ const About = () => {
                   'A UI-UX Designer',
                   2000,
                 ]}
-                wrapper='div'
+                wrapper="div"
                 repeat={Infinity}
               />
             </div>

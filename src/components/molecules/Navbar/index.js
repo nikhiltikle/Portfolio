@@ -12,7 +12,6 @@ import { ImBlog } from "react-icons/im";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import "../../../pages/shared/Shared.css";
-import { PrimaryBtn } from "../../../components";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -24,8 +23,10 @@ export default function Navbar() {
     { title: "Home", link: "/", icon: <FaHome /> },
     { title: "About", link: "/about", icon: <RiFolderInfoFill /> },
     { title: "Project", link: "/project", icon: <MdWork /> },
+    { title: "Services", link: "/services", icon: <MdWork /> },
     { title: "Contact", link: "/contact", icon: <RiContactsBook2Fill /> },
     { title: "Blog", link: "/blog", icon: <ImBlog /> },
+    { title: "Resume", link: "/resume", icon: <ImBlog /> },
   ];
   const activeLink = ({ isActive }) => {
     return {
@@ -33,8 +34,6 @@ export default function Navbar() {
       color: isActive && "#FF651C",
     };
   };
-
-  // Show Navbar on Scroll UP
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   useEffect(() => {
@@ -80,19 +79,8 @@ export default function Navbar() {
                 </NavLink>
               </li>
             ))}
+           
 
-            <a
-              className="inline-block ml-4"
-              href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
-              target="blank"
-            >
-              <PrimaryBtn>
-                <span>Resume</span>
-                <span>
-                  <FaDownload />
-                </span>
-              </PrimaryBtn>
-            </a>
           </ul>
           <div className="block lg:hidden">
             <button onClick={toggleDrawer} className="btn btn-ghost text-white">
@@ -131,7 +119,7 @@ export default function Navbar() {
                 <li className="text-center m-4">
                   <a
                     className="inline-block w-full"
-                    href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
+                    href='/resume.pdf'
                     target="blank"
                   >
                     <button className="primary-button w-full text-white">
@@ -141,11 +129,12 @@ export default function Navbar() {
                       </span>
                     </button>
                   </a>
+
                 </li>
               </ul>
               <div className="text-center">
                 <p className="text-neutral">
-                  &copy; Copyright 2023, Gilbert Hutapea. All Rights Reserved
+                  &copy; Copyright 2023, Nikhil Tikle. <br/>All Rights Reserved
                 </p>
               </div>
             </Drawer>

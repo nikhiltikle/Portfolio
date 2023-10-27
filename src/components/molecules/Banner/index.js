@@ -17,6 +17,14 @@ const Banner = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+  const pdfURL = "resume.pdf"; 
+  const downloadPDF = () => {
+    const link = document.createElement("a");
+    link.href = pdfURL;
+    link.download = "Resume_Nikhil_Tikle.pdf"; 
+    link.click();
+  };
+
   return (
     <div className="parent min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between">
       <motion.div
@@ -47,17 +55,13 @@ const Banner = () => {
           With a proven history of surpassing client expectations and a drive to continually enhance my skill set, I eagerly anticipate embracing new challenges and further elevating my proficiency in the field.
         </p>
         <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">
-          <a
-            href="https://drive.google.com/file/d/19rnbukAhf9oPhadMhsvI3xnWF6FIYeMT/view?usp=share_link"
-            target="blank"
-          >
-            <button className="primary-button">
-              <span>My Resume</span>
-              <span>
-                <FaDownload />
-              </span>
-            </button>
-          </a>
+          <button className="primary-button" onClick={downloadPDF}>
+            <span>My Resume</span>
+            <span>
+              <FaDownload />
+            </span>
+          </button>
+
           <Link to="/about" className="ml-4">
             <SecondaryBtn>
               <span>About Me</span>
