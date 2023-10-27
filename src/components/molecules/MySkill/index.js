@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
 import man from "../../../assets/man.json";
-import {languages, frameworks, tools, other} from "../../../Utils/Skills";
+import {languages, frameworks, tools, other} from "../../../constants/Skills";
 
 const MySkill = () => {
 
