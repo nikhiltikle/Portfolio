@@ -10,7 +10,7 @@ const Resume = () => {
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = pdfURL;
-    link.download = "resume_nikhil_tikle.pdf";
+    link.download = "Resume_Nikhil_Tikle.pdf";
     link.click();
   };
   const [width, setWidth] = useState(1200);
@@ -32,24 +32,22 @@ const Resume = () => {
         </button>
       </div>
 
-      <div className="relative flex justify-center items-center">
-        <div className="justify-center pb-50">
+        <div className="flex justify-center relative items-center pb-8">
           <Document file={pdfURL}>
             <Page
               pageNumber={1}
-              scale={width > 786 ? 1.4 : 0.6}
+              scale={width > 786 ? 1.4 : 0.5}
               renderAnnotationLayer={false}
               renderTextLayer={false}
             />
             <Page
               pageNumber={2}
-              scale={width > 786 ? 1.4 : 0.6}
+              scale={width > 786 ? 1.4 : 0.5}
               renderAnnotationLayer={false}
               renderTextLayer={false}
             />
           </Document>
         </div>
-      </div>
     </>
   );
 };

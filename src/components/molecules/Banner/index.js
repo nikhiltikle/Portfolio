@@ -17,11 +17,11 @@ const Banner = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const pdfURL = "resume.pdf"; // URL to your PDF
+  const pdfURL = "resume.pdf"; 
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = pdfURL;
-    link.download = "resume_nikhil_tikle.pdf"; // Specify the filename for the downloaded file
+    link.download = "Resume_Nikhil_Tikle.pdf"; 
     link.click();
   };
 
