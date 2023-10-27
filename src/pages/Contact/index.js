@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='parent py-24 mt-4'>
+      <div className='parent pt-6 pb-24 mt-4'>
         <motion.div
           initial='hidden'
           animate={viewDiv && 'visible'}
@@ -84,9 +84,9 @@ const Contact = () => {
             animate={viewDiv && 'visible'}
             variants={contactAnimation}
           >
-            <h2 className='text-2xl font-medium'>Contact Me</h2>
+            <h2 className='text-2xl ml-2 font-medium'>Contact Me</h2>
             <form ref={form} onSubmit={handleSend}>
-              <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-6'>
+              <div className='grid grid-cols-1 w-full lg:grid-cols-2 lg:gap-6'>
                 <input
                   className='input-field'
                   type='text'
@@ -113,7 +113,7 @@ const Contact = () => {
                 required
               />
               <textarea
-                className='input-field'
+                className='input-field ml-2'
                 name='message'
                 id='message'
                 cols='30'
@@ -124,7 +124,7 @@ const Contact = () => {
               <button
                 type='submit'
                 value='Send Message'
-                className='primary-button'
+                className='primary-button ml-2'
               >
                 <span>Send</span>
                 <span>
@@ -139,22 +139,22 @@ const Contact = () => {
             animate={viewDiv && 'visible'}
             variants={contactAnimation}
           >
-            <h2 className='text-2xl font-medium'>Contact Info</h2>
-            <div className='flex items-center my-6'>
+            <h2 className='text-2xl font-medium ml-2'>Contact Info</h2>
+            <div className='flex items-center my-6 ml-2'>
               <FaUserAlt className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaUserAlt>
               <h3 className='font-medium text-primary'>Nikhil Tikle</h3>
             </div>
-            <div className='flex items-center my-6'>
+            <div className='flex items-center my-6 ml-2'>
               <MdEmail className='text-3xl mr-7 hover:text-primary cursor-pointer duration-300'></MdEmail>
               <h3 className='font-medium text-primary'>nikhiltikle31@gmail.com</h3>
             </div>
-            <div className='flex items-center my-6'>
+            <div className='flex items-center my-6 ml-2'>
               <FaLocationArrow className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaLocationArrow>
               <h3 className='font-medium text-primary'>
                 Indore, India (452009)
               </h3>
             </div>
-            <div className='mt-8 flex items-center'>
+            <div className='mt-8 flex items-center ml-2'>
               <h3 className='text-xl text-neutral'>Social</h3>
               <div className='bg-gray-400 w-10 h-[2px] mx-4'></div>
               <a
