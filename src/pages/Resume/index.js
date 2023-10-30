@@ -28,7 +28,7 @@ const Resume = () => {
           <span>
             <FaDownload />
           </span>
-          <span>Download CV</span>
+          <span>DOWNLOAD CV</span>
         </button>
       </div>
 
