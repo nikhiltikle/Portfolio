@@ -26,7 +26,7 @@ const Service = () => {
   
   return (
     <div
-      className="py-20 parent"
+      className="py-16 parent"
     >
       <motion.div
         className="mb-12"
@@ -75,7 +75,7 @@ const Service = () => {
             to="/services"
             className="text-2xl hover:text-primary duration-300"
           >
-            <button className="primary-button">
+            <button className="primary-button ml-2">
               <span>See All</span>
               <span>
                 <FiArrowRight />

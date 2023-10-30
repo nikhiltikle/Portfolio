@@ -54,7 +54,7 @@ const Banner = () => {
         Front-end developer with 7+ years experience in crafting responsive web design. Proficient in Redux, HTML/CSS, ReactJS, NextJS, JavaScript, Figma-UI, AdobeXD UI/UX. Specializes in UI/UX-focused web development. <br />
           With a proven history of surpassing client expectations and a drive to continually enhance my skill set, I eagerly anticipate embracing new challenges and further elevating my proficiency in the field.
         </p>
-        <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">
+        <div className="flex items-center justify-center translate-y-[-60%] sm:translate-y-[-0%]">
           <button className="primary-button" onClick={downloadPDF}>
             <span>My Resume</span>
             <span>

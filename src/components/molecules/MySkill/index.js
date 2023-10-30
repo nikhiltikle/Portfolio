@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
 import man from "../../../assets/man.json";
-import {languages, frameworks, tools, other} from "../../../Utils/Skills";
+import {languages, frameworks, tools, other} from "../../../constants/Skills";
 
 const MySkill = () => {
 
@@ -14,7 +14,7 @@ const MySkill = () => {
     },
   };
   return (
-    <div className="pt-2 sm:pt-24">
+    <div className="pt-0 sm:pt-12">
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>
