@@ -93,7 +93,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-      {/* My Skill */}
+      {/* Skill */}
       <MySkill />
       {/* Education */}
       <Education />
