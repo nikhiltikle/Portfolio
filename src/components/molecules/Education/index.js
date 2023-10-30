@@ -11,7 +11,7 @@ const Education = () => {
     },
   };
   return (
-    <div className="pt-24">
+    <div className="mt-16">
       <div className="mb-12">
         <h1 className="text-4xl font-semibold drop-shadow-md text-center">
           My <span className="text-primary">Experience</span>
