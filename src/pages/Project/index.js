@@ -29,16 +29,16 @@ const Project = () => {
     <div className={`${location.pathname !== '/' && 'pt-16'} bg-gray-100`}>
       <div className="parent py-6 bg-[#212121]">
         <motion.div
-          initial="hidden"
+          initial='hidden'
           animate={viewDiv && 'visible'}
           variants={headingAnimation}
         >
-          <div className="mb-12">
-            <h3 className="text-neutral text-center">
+          <div className='mb-12'>
+            <h3 className='text-neutral text-center'>
               Some of my recent Projects
             </h3>
-            <h1 className="text-4xl font-semibold text-center px-4">
-              Featured <span className="text-primary">Projects</span>
+            <h1 className='text-4xl font-semibold text-center px-4'>
+              Featured <span className='text-primary'>Projects</span>
             </h1>
             <BottomLine />
           </div>
@@ -46,7 +46,7 @@ const Project = () => {
 
         <motion.div
           ref={ref}
-          initial="hidden"
+          initial='hidden'
           animate={viewDiv && 'visible'}
           variants={sectionBodyAnimation}
         />
