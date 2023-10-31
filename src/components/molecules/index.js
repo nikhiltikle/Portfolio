@@ -6,7 +6,6 @@ import MernBlogRepair from './MernBlogRepair';
 import MySkill from './MySkill';
 import Navbar from './Navbar';
 import NotFound from './NotFound';
-import ProjectDetails from './ProjectDetails';
 import Service from './Service';
 
 export {
@@ -18,6 +17,5 @@ export {
   MySkill,
   Navbar,
   NotFound,
-  ProjectDetails,
   Service,
 };
