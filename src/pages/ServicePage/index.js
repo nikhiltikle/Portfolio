@@ -25,7 +25,7 @@ const ServicePage = () => {
   }, [inView, animation]);
 
   return (
-    <div className="py-20 parent"
+    <div className="py-20 mx-2 parent"
     >
       <motion.div
         className="mb-12"
