@@ -26,7 +26,7 @@ const Service = () => {
   
   return (
     <div
-      className="py-16 mx-2 parent"
+      className="py-12 mx-2 parent"
     >
       <motion.div
         className="mb-12"

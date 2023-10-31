@@ -28,7 +28,7 @@ const ServicePage = () => {
     <div className="py-20 mx-2 parent"
     >
       <motion.div
-        className="mb-12"
+        className="mb-6"
         initial="hidden"
         animate={viewDiv && "visible"}
         variants={headingAnimation}

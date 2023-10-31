@@ -58,7 +58,7 @@ const About = () => {
             </h1>
             <div className="my-8">
               <TypeAnimation
-                className='text-2xl text-primary font-bold text-center ml-2 translate-y-[-420%] sm:translate-y-[-300%]  sm:text-2xl sm:mb-2 md:text-left md:translate-y-[-10%] '
+                className='text-2xl text-primary font-bold text-left ml-2 translate-y-[-450%] sm:translate-y-[-300%]  sm:text-2xl sm:mb-2 md:text-left md:translate-y-[-10%] '
                 cursor={true}
                 sequence={[
                   'A Front-end Developer',
@@ -72,7 +72,7 @@ const About = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className='text-neutral font-medium text-left ml-2 translate-y-[-40%] sm:translate-y-[-50%] sm:mb-2 md:text-left md:translate-y-[0%] ' id='about-para'>
+            <p className='text-neutral font-medium text-left ml-2 translate-y-[-45%] sm:translate-y-[-50%] sm:mb-2 md:text-left md:translate-y-[0%] ' id='about-para'>
             With over 7 years of experience as a Senior Frontend Developer, I bring extensive expertise in the JavaScript ecosystem, React.js, and modern UI/UX design. My skill set includes proficiency in frontend tools like Webpack, Babel, and more, as well as data visualization using D3.js and Chart.js. I'm committed to ensuring cross-browser compatibility, responsive web design, and top-tier frontend testing and performance optimization. I'm passionate about staying up-to-date with emerging technologies and frameworks to deliver cutting-edge solutions.
             </p>
             <br />
