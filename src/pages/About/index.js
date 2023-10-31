@@ -13,7 +13,7 @@ const About = () => {
   
   return (
     <div className="parent pt-16 my-16">
-      <div className="">
+      <div className="-mb-8 ">
         <motion.div
           className="mb-10"
           initial={{ y: -200, opacity: 0 }}
@@ -53,12 +53,12 @@ const About = () => {
               transition: { duration: 1, delay: 1.25 },
             }}
           >
-            <h1 className='text-4xl font-semibold mb-4 text-center translate-y-[-300%] sm:translate-y-[-0%] sm:text-3xl sm:mb-2 md:text-left'>
+            <h1 className='text-4xl font-semibold mb-4 text-center translate-y-[-300%] sm:translate-y-[-300%] sm:text-3xl sm:mb-2 md:text-left md:translate-y-[-10%] '>
               Nikhil Tikle
             </h1>
             <div className="my-8">
               <TypeAnimation
-                className='text-2xl text-primary font-bold text-left ml-2 translate-y-[-450%] sm:translate-y-[-0%]  sm:text-2xl sm:mb-2 md:text-left'
+                className='text-2xl text-primary font-bold text-center ml-2 translate-y-[-420%] sm:translate-y-[-300%]  sm:text-2xl sm:mb-2 md:text-left md:translate-y-[-10%] '
                 cursor={true}
                 sequence={[
                   'A Front-end Developer',
@@ -72,16 +72,16 @@ const About = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className='text-neutral font-medium text-left ml-2 translate-y-[-40%] sm:translate-y-[-0%] sm:mb-2 md:text-left' id='about-para'>
+            <p className='text-neutral font-medium text-left ml-2 translate-y-[-40%] sm:translate-y-[-50%] sm:mb-2 md:text-left md:translate-y-[0%] ' id='about-para'>
             With over 7 years of experience as a Senior Frontend Developer, I bring extensive expertise in the JavaScript ecosystem, React.js, and modern UI/UX design. My skill set includes proficiency in frontend tools like Webpack, Babel, and more, as well as data visualization using D3.js and Chart.js. I'm committed to ensuring cross-browser compatibility, responsive web design, and top-tier frontend testing and performance optimization. I'm passionate about staying up-to-date with emerging technologies and frameworks to deliver cutting-edge solutions.
             </p>
             <br />
-            <p className='text-neutral font-medium text-left ml-2 translate-y-[-130%] sm:translate-y-[-0%] sm:mb-2 md:text-left' id='about-para2'>
+            <p className='text-neutral font-medium text-left ml-2 translate-y-[-130%] sm:translate-y-[-150%] sm:mb-2 md:text-left md:translate-y-[-10%] ' id='about-para2'>
               My passion for solving complex problems and creating innovative
               solutions drives me to stay up-to-date with the latest
               technologies and trends in the industry.
             </p>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4 mt-2 text-left ml-2 translate-y-[-150%] sm:translate-y-[-0%] sm:mb-2 md:text-left ' id='address'>
+            <div className='about-contact grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-4 mt-2 text-left ml-2 translate-y-[-150%] sm:translate-y-[-100%] sm:mb-2 md:text-left md:translate-y-[-10%] ' id='address'>
               <h2 className='font-medium'>
                 <span className='mr-2 text-primary'>Email : </span>
                 nikhiltikle31@gmail.com
@@ -93,7 +93,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-      {/* My Skill */}
+      {/* Skill */}
       <MySkill />
       {/* Education */}
       <Education />
