@@ -10,10 +10,8 @@ import {
 } from '../../hooks/useAnimation';
 import { BottomLine } from '../../components';
 import ProjectCard from './ProjectCard';
-import { Container, Row, Col } from 'react-bootstrap';
 
 const Project = () => {
-  const [items, setItems] = useState(Items);
   const location = useLocation();
   const [ref, inView] = useInView();
   const [viewDiv, setViewDiv] = useState(false);
@@ -25,14 +23,11 @@ const Project = () => {
     } else {
       setViewDiv(false);
     }
-    if (location.pathname === '/' && items.length > 3) {
-      setItems(items.slice(0, 3));
-    }
-  }, [inView, animation, location, items]);
+  }, [inView, animation, location]);
 
   return (
-    <div className={`${location.pathname !== '/' && 'pt-16'}`}>
-      <div className="parent py-6">
+    <div className={`${location.pathname !== '/' && 'pt-16'} bg-gray-100`}>
+      <div className="parent py-6 bg-[#212121]">
         <motion.div
           initial="hidden"
           animate={viewDiv && 'visible'}
@@ -55,10 +50,10 @@ const Project = () => {
           animate={viewDiv && 'visible'}
           variants={sectionBodyAnimation}
         />
-        <Container>
-          <Row className=" flex justify-center	">
+        <div className="container mx-auto">
+          <div className="flex justify-center">
             {Items.map((project) => (
-              <Col md={4} className="project-card">
+              <div className="md:w-1/3 px-4 mb-8">
                 <ProjectCard
                   imgPath={project.imgurl}
                   isBlog={false}
@@ -70,10 +65,10 @@ const Project = () => {
                   customButton={project.buttonLabel}
                   icon={project.icon}
                 />
-              </Col>
+              </div>
             ))}
-          </Row>
-        </Container>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,28 +1,25 @@
 import React, { useState } from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import { CgWebsite } from 'react-icons/cg';
 
 function ProjectCard(props) {
   const [expandedText, setExpandedText] = useState(false);
 
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title
-          className="mb-3 text-2xl text-[#ff651c] font-bold"
-          style={{ textAlign: 'center' }}
-        >
-          {props.title}
-        </Card.Title>
+    <div className="bg-[#313131]   project-card-view">
+      <img src={props.imgPath} alt="card-img" className="w-full" />
 
-        <Card.Text
-          style={{ textAlign: 'left', padding: '0 20px' }}
-          className={expandedText ? 'expanded-card-text' : ''}
+      <div className="p-4">
+        <h2 className="mb-3 text-2xl text-[#ff651c] font-bold text-center">
+          {props.title}
+        </h2>
+
+        <p
+          className={` card-text ${
+            expandedText ? 'expanded-card-text' : ''
+          } text-left px-4 bg-[#212121]`}
         >
           {props.description}
-        </Card.Text>
+        </p>
 
         <button
           onClick={() => setExpandedText(!expandedText)}
@@ -31,16 +28,22 @@ function ProjectCard(props) {
           {expandedText ? 'Hide' : 'Read more'}
         </button>
 
-        <div className="flex justify-center	py-6">
-          {!!props.demoLink && (
-            <Button variant="primary" href={props.demoLink} target="_blank">
-              {props.icon || <CgWebsite />}&nbsp;
-              {props.customButton || 'Website'}
-            </Button>
+        <div className="flex justify-center py-6">
+          {props.demoLink && (
+            <a
+              href={props.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 text-white rounded py-2 px-6 flex items-center"
+            >
+              {props.icon || <CgWebsite />}
+              <span className="ml-2">{props.customButton || 'Website'}</span>
+            </a>
           )}
         </div>
-      </Card.Body>
-    </Card>
+      </div>
+    </div>
   );
 }
+
 export default ProjectCard;

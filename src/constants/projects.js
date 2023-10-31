@@ -22,7 +22,7 @@ const Items = [
   {
     id: 3,
     imgurl: muiImg,
-    name: 'Material UI dashboard',
+    name: 'Material UI Dashboard',
     description:
       'Made for fun - The app is a clone of Material based theme which demonstrates my abolity clone a pixel perfect UI from scrach. It includes a comprehensive collection of prebuilt components that are ready for use in production right out of the box.Base UI, by contrast, could be considered the "skeletal" or "headless" counterpart to Material UI—in fact, future versions of Material UI will use Base UI components and hooks for its foundational structure.',
     demoLink: 'https://mui.com/',

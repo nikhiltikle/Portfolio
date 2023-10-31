@@ -89,7 +89,7 @@
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px #ff651c  ;
-  color: white  ;
+  color: rgb(255, 255, 255)  ;
   background-color: transparent  ;
   opacity: 0.9  ;
   transition: all 0.5s ease 0s  ;
