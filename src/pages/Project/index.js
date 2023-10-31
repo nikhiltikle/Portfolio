@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Items from '../../../src/constants/Items';
+import Items from '../../../src/constants/projects';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLocation } from 'react-router-dom';
