@@ -3,6 +3,7 @@ import "../../components/atoms/PrimaryBtn/PrimaryBtn.css";
 import "../shared/Shared.css";
 import { FaDownload } from "react-icons/fa";
 import { Document, Page, pdfjs } from "react-pdf";
+import "./resume.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
@@ -23,31 +24,33 @@ const Resume = () => {
       <br />
       <br />
       <br />
-      <div className="flex justify-center items-center p-12">
-        <button className="primary-button flex-row" onClick={downloadPDF}>
-          <span>
-            <FaDownload />
-          </span>
-          <span>DOWNLOAD CV</span>
-        </button>
-      </div>
+      <div className="resume">
+          <div className="flex justify-center items-center p-12">
+            <button className="primary-button flex-row" onClick={downloadPDF}>
+              <span>
+                <FaDownload />
+              </span>
+              <span>DOWNLOAD CV</span>
+            </button>
+          </div>
 
-        <div className="flex justify-center items-center pb-8">
-          <Document file={pdfURL}>
-            <Page
-              pageNumber={1}
-              scale={width > 786 ? 1.4 : 0.5}
-              renderAnnotationLayer={false}
-              renderTextLayer={false}
-            />
-            <Page
-              pageNumber={2}
-              scale={width > 786 ? 1.4 : 0.5}
-              renderAnnotationLayer={false}
-              renderTextLayer={false}
-            />
-          </Document>
-        </div>
+            <div className="flex justify-center items-center pb-8">
+              <Document file={pdfURL}>
+                <Page
+                  pageNumber={1}
+                  scale={width > 786 ? 1.4 : 0.5}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                />
+                <Page
+                  pageNumber={2}
+                  scale={width > 786 ? 1.4 : 0.5}
+                  renderAnnotationLayer={false}
+                  renderTextLayer={false}
+                />
+              </Document>
+            </div>
+      </div>
     </>
   );
 };
