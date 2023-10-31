@@ -4,7 +4,6 @@ import {
   NotFound,
   Loader,
   ScrollToTop,
-  ProjectDetails,
   Navbar,
   Footer,
   MernBlogRepair,
@@ -32,7 +31,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
-          <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/resume" element={<Resume />} />
