@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Items from '../../Utils/Items';
+import Items from '../../../src/constants/Items';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLocation } from 'react-router-dom';
@@ -9,7 +9,7 @@ import {
   sectionBodyAnimation,
 } from '../../hooks/useAnimation';
 import { BottomLine } from '../../components';
-import ProjectCard from './ProjectCards';
+import ProjectCard from './ProjectCard';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Project = () => {
