@@ -34,17 +34,17 @@ const Resume = () => {
             </button>
           </div>
 
-            <div className="flex justify-center items-center pb-8">
-              <Document file={pdfURL}>
+            <div className="flex justify-center items-center mb-24">
+              <Document file={pdfURL} className="">
                 <Page
                   pageNumber={1}
-                  scale={width > 786 ? 1.4 : 0.5}
+                  scale={width > 768 ? 1.2 : 0.5}
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
                 />
                 <Page
                   pageNumber={2}
-                  scale={width > 786 ? 1.4 : 0.5}
+                  scale={width > 768 ? 1.2 : 0.5}
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
                 />
