@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import {
   RiMenu3Fill,
   RiContactsBook2Fill,
   RiFolderInfoFill,
-} from "react-icons/ri";
-import { GiCrossMark } from "react-icons/gi";
-import { FaHome, FaDownload } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import { ImBlog } from "react-icons/im";
-import Drawer from "react-modern-drawer";
-import "react-modern-drawer/dist/index.css";
-import "../../../pages/shared/Shared.css";
+} from 'react-icons/ri';
+import { GiCrossMark } from 'react-icons/gi';
+import { FaHome, FaDownload } from 'react-icons/fa';
+import { MdWork } from 'react-icons/md';
+import { ImBlog } from 'react-icons/im';
+import Drawer from 'react-modern-drawer';
+import 'react-modern-drawer/dist/index.css';
+import '../../../pages/shared/Shared.css';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -20,25 +20,31 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { title: "Home", link: "/", icon: <FaHome /> },
-    { title: "About", link: "/about", icon: <RiFolderInfoFill /> },
-    { title: "Project", link: "/project", icon: <MdWork /> },
-    { title: "Services", link: "/services", icon: <MdWork /> },
-    { title: "Contact", link: "/contact", icon: <RiContactsBook2Fill /> },
-    { title: "Blog", link: "/blog", icon: <ImBlog /> },
-    { title: "Resume", link: "/resume", icon: <ImBlog /> },
+    { title: 'Home', link: '/', icon: <FaHome /> },
+    { title: 'About', link: '/about', icon: <RiFolderInfoFill /> },
+    { title: 'Projects', link: '/project', icon: <MdWork /> },
+    { title: 'Services', link: '/services', icon: <MdWork /> },
+    { title: 'Contact', link: '/contact', icon: <RiContactsBook2Fill /> },
+    { title: 'Resume', link: '/resume', icon: <ImBlog /> },
   ];
   const activeLink = ({ isActive }) => {
     return {
       fontWeight: 500,
-      color: isActive && "#FF651C",
+      color: isActive && '#FF651C',
     };
   };
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const pdfURL = 'resume.pdf';
+  const downloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = pdfURL;
+    link.download = 'Resume_Nikhil_Tikle.pdf';
+    link.click();
+  };
   useEffect(() => {
     const controlNavbar = () => {
-      if (typeof window !== "undefined") {
+      if (typeof window !== 'undefined') {
         if (window.scrollY > lastScrollY) {
           setShow(true);
         } else {
@@ -47,17 +53,17 @@ export default function Navbar() {
         setLastScrollY(window.scrollY);
       }
     };
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
       return () => {
-        window.removeEventListener("scroll", controlNavbar);
+        window.removeEventListener('scroll', controlNavbar);
       };
     }
   }, [lastScrollY]);
 
   return (
     <div
-      className={`visible ${show && "nav-hidden"} shadow-lg bg-[#313131] 
+      className={`visible ${show && 'nav-hidden'} shadow-lg bg-[#313131] 
      z-50`}
     >
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
@@ -79,8 +85,6 @@ export default function Navbar() {
                 </NavLink>
               </li>
             ))}
-           
-
           </ul>
           <div className="block lg:hidden">
             <button onClick={toggleDrawer} className="btn btn-ghost text-white">
@@ -90,7 +94,7 @@ export default function Navbar() {
               open={isOpen}
               onClose={toggleDrawer}
               direction="right"
-              style={{ backgroundColor: "#212121" }}
+              style={{ backgroundColor: '#212121' }}
               className="bla bla bla flex flex-col justify-between pb-4"
             >
               <ul className="">
@@ -117,24 +121,21 @@ export default function Navbar() {
                   </li>
                 ))}
                 <li className="text-center m-4">
-                  <a
-                    className="inline-block w-full"
-                    href='/resume.pdf'
-                    target="blank"
+                  <button
+                    className="primary-button w-full text-white"
+                    onClick={downloadPDF}
                   >
-                    <button className="primary-button w-full text-white">
-                      <span>Resume</span>
-                      <span>
-                        <FaDownload />
-                      </span>
-                    </button>
-                  </a>
-
+                    <span>Resume</span>
+                    <span>
+                      <FaDownload />
+                    </span>
+                  </button>
                 </li>
               </ul>
               <div className="text-center">
                 <p className="text-neutral">
-                  &copy; Copyright 2023, Nikhil Tikle. <br/>All Rights Reserved
+                  &copy; Copyright 2023, Nikhil Tikle. <br />
+                  All Rights Reserved
                 </p>
               </div>
             </Drawer>
