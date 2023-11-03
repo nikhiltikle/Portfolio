@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="pt-16">
       <Banner />
-      <div className='md:mt-16 lg:-mt-12'>
+      <div className='md:mt-12 lg:-mt-8'>
         <Service />
       </div>
       <div className='-mt-16 '>
