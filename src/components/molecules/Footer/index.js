@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   const year = new Date();
@@ -7,37 +7,37 @@ const Footer = () => {
   return (
     <>
       <footer
-        className='w-full text-center p-6 bg-accent'
+        className="w-full text-center p-6 bg-accent"
         style={{ backgroundColor: '#313131' }}
       >
-        <div className='flex items-center justify-center mb-6'>
+        <div className="flex items-center justify-center mb-6">
           <a
-            className='inline-block mx-4'
-            href='https://www.linkedin.com/in/nikhiltikle/'
-            target='_blank'
-            rel='noopener noreferrer'
+            className="inline-block mx-4"
+            href="https://www.linkedin.com/in/nikhiltikle/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaLinkedin className='text-3xl text-blue-400' />
+            <FaLinkedin className="text-3xl text-blue-400" />
           </a>
           <a
-            className='inline-block mx-4'
-            href='https://github.com/nikhiltikle'
-            target='_blank'
-            rel='noopener noreferrer'
+            className="inline-block mx-4"
+            href="https://github.com/nikhiltikle"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaGithub className='text-3xl text-black' />
+            <FaGithub className="text-3xl text-black" />
           </a>
         </div>
 
-        <div className='w-full h-[2px] bg-gray-600'></div>
-        <div className='flex flex-col md:flex-row items-center justify-between mt-4'>
+        <div className="w-full h-[2px] bg-gray-600"></div>
+        <div className="flex flex-col md:flex-row items-center justify-between mt-4">
           <p>&copy; Copyright All Rights Reserved {year.getFullYear()}</p>
           <p>
             Developed by{' '}
             <a
-              href='https://www.linkedin.com/in/nikhiltikle/'
-              className='text-primary hover:underline'
-              target='blank'
+              href="https://www.linkedin.com/in/nikhiltikle/"
+              className="text-primary hover:underline"
+              target="blank"
             >
               Nikhil Tikle
             </a>
