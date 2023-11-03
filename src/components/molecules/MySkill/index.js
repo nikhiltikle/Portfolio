@@ -14,7 +14,7 @@ const MySkill = () => {
     },
   };
   return (
-    <div className="pt-0 sm:pt-12">
+    <div className="mt-2 sm:mt-24">
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>

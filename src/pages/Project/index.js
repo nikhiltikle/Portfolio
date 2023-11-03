@@ -27,7 +27,7 @@ const Project = () => {
   }, [inView, animation, location]);
 
   return (
-    <div className="my-16 parent"
+    <div className="project my-16 parent mx-2"
     >
       <motion.div
         className="mb-12"
