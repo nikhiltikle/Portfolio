@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div className="pt-16">
       <Banner />
-      <div className=''>
+      <div className='-mt-4'>
         <Service />
       </div>
-      <div className='-mt-12'>
+      <div className='-mt-8'>
         <Project />
       </div>
       <div className='-mt-12'>

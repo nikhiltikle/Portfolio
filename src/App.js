@@ -27,21 +27,23 @@ function App() {
       <ScrollToTop />
       {isFalse || <Navbar />}
       <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<ServicePage />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/404" element={<NotFound />} />
-          <Route path="*" element={<Navigate replace to="/404" />}></Route>
-          <Route path="/mern-blog" element={<MernBlogRepair />} />
-          <Route
-            path="/employee-salary-management"
-            element={<EmployeeSalaryManagementRepair />}
-          />
-        </Routes>
+        <div className='min-h-[100vh-2rem]'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<ServicePage />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<Navigate replace to="/404" />}></Route>
+            <Route path="/mern-blog" element={<MernBlogRepair />} />
+            <Route
+              path="/employee-salary-management"
+              element={<EmployeeSalaryManagementRepair />}
+            />
+          </Routes>
+        </div>
       </Suspense>
       {isFalse || <Footer />}
     </>

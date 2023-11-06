@@ -34,7 +34,7 @@ const Resume = () => {
             </button>
           </div>
 
-            <div className="flex justify-center items-center mb-24">
+            <div className="flex justify-center items-center mb-20">
               <Document file={pdfURL} className="">
                 <Page
                   pageNumber={1}

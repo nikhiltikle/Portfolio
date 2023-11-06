@@ -1,7 +1,3 @@
-.project{
-  min-height: calc(100vh-2rem);
-}
-
 .active-btn {
   color: #ff651c;
   background-color: transparent;

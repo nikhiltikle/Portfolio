@@ -1,7 +1,3 @@
-.contact{
-    min-height: calc(100vh - 2rem);
-}
-
 .input-field {
     display: inline-block;
     padding: 9px;

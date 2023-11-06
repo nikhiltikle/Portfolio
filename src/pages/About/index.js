@@ -53,7 +53,7 @@ const About = () => {
               transition: { duration: 1, delay: 1.25 },
             }}
           >
-            <h1 className='text-4xl font-semibold mb-7 text-center translate-y-[-300%] sm:translate-y-[-300%] sm:text-3xl sm:mb-2 md:text-left md:translate-y-[-10%] md:ml-1 '>
+            <h1 className='text-4xl font-semibold mb-7 text-center translate-y-[-300%] sm:translate-y-[-300%] sm:text-3xl sm:mb-2 md:text-left md:translate-y-[-10%] md:ml-2 '>
               Nikhil Tikle
             </h1>
             <div className="my-4">
