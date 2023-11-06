@@ -18,6 +18,9 @@ const MySkill = () => {
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>
+      <div>
+          <Lottie options={defaultOptions} height={400} width={310} />
+        </div>
       <div className="flex flex-col md:flex-row items-center justify-evenly my-8">
 
         <div>
@@ -87,9 +90,6 @@ const MySkill = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div>
-          <Lottie options={defaultOptions} height={400} width={320} />
         </div>
       </div>
     </div>

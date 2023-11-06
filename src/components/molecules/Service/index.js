@@ -26,7 +26,7 @@ const Service = () => {
   
   return (
     <div
-      className="py-12 mx-2 parent"
+      className="mx-2 parent mt-6 sm:mt-12"
     >
       <motion.div
         className="mb-12"
@@ -55,7 +55,7 @@ const Service = () => {
               service.id % 2 === 0
                 ? "bg-accent shadow-lg"
                 : "bg-[#313131] shadow-md"
-            } rounded-lg p-6 hover:shadow-primary cursor-pointer duration-300`}
+            } rounded-lg p-3 hover:shadow-primary cursor-pointer duration-300`}
           >
             <div className="mb-4 text-center">
               <span className="inline-block text-5xl text-primary">

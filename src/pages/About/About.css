@@ -14,3 +14,9 @@
 .skillbar-percent {
     color: #FF651C !important;
 }
+
+@media screen and (min-width: 420px) and (max-width: 640px) {
+        .about-contact {
+            transform: translateY(-28vh); 
+        }
+}

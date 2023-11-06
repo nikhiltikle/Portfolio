@@ -1,5 +1,5 @@
 .project{
-  min-height: 100vh;
+  min-height: calc(100vh-2rem);
 }
 
 .active-btn {
@@ -19,7 +19,8 @@
 }
 
 .expanded-card-text {
-  -webkit-line-clamp: unset;
+  -webkit-line-clamp:
+   unset;
 }
 
 .item {

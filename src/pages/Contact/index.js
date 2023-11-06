@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='contact parent pt-16 pb-24 mt-16'>
+      <div className='contact parent my-16 pt-12'>
         <motion.div
           initial='hidden'
           animate={viewDiv && 'visible'}
