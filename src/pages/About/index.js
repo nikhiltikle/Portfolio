@@ -93,7 +93,7 @@ const About = () => {
         </div>
       </div>
       {/* Skill */}
-      <div className="-mt-20 sm:-mt-32 md:mt-16">
+      <div className="my-skills -mt-20 sm:-mt-32 md:mt-16">
         <MySkill />
       </div>
       {/* Education */}

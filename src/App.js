@@ -27,7 +27,7 @@ function App() {
       <ScrollToTop />
       {isFalse || <Navbar />}
       <Suspense fallback={<Loader />}>
-        <div className='min-h-[100vh-2rem]'>
+        <div className='grow'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
