@@ -19,6 +19,7 @@ function App() {
       <ScrollToTop />
       {isFalse || <Navbar />}
       <Suspense fallback={<Loader />}>
+        <div className='grow'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -29,6 +30,8 @@ function App() {
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<Navigate replace to="/404" />}></Route>
         </Routes>
+        </div>
+        
       </Suspense>
       {isFalse || <Footer />}
     </>

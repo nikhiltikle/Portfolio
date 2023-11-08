@@ -26,7 +26,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="parent min-h-[100vh] flex flex-col-reverse lg:flex-row items-center justify-between">
+    <div className="parent min-h-[80vh] flex flex-col-reverse lg:flex-row items-center justify-between">
       <motion.div
         initial={{ x: '-100vw' }}
         animate={{ x: 0 }}
@@ -63,7 +63,7 @@ const Banner = () => {
           continually enhance my skill set, I eagerly anticipate embracing new
           challenges and further elevating my proficiency in the field.
         </p>
-        <div className="flex items-center justify-center translate-y-[-60%] sm:translate-y-[-0%]">
+        <div className="flex items-center justify-center space-x-2 translate-y-[-60%] sm:translate-y-[-0%]">
           <button className="primary-button" onClick={downloadPDF}>
             <span>My Resume</span>
             <span>
@@ -71,7 +71,7 @@ const Banner = () => {
             </span>
           </button>
 
-          <Link to="/about" className="ml-4">
+          <Link to="/about">
             <SecondaryBtn>
               <span>About Me</span>
               <span>

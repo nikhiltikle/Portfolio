@@ -129,7 +129,7 @@
         top: 10px;
         box-shadow: 0px 0px 20px #f79d41;
       }
-
+      
       .loading_orange:before {
         content: ' ';
         width: 5px;
@@ -140,7 +140,13 @@
         left: 9px;
         border-radius: 69%;
       }
-
+      
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
       @keyframes blue_animation {
         0% {
           transform: rotate(0deg);
@@ -170,6 +176,7 @@
           transform: rotate(480deg);
         }
       }
+
     </style>
   </head>
 

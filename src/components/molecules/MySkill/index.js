@@ -13,11 +13,13 @@ const MySkill = () => {
     },
   };
   return (
-    <div className="pt-0 sm:pt-12">
+    <div className="mt-0 sm:mt-24">
       <h1 className="text-4xl font-semibold drop-shadow-md text-center mb-8">
         My <span className="text-primary">Skills</span>
       </h1>
-      <div className="flex flex-col md:flex-row items-center justify-evenly my-8">
+      
+      <div className="flex flex-col-reverse md:flex-row items-center justify-evenly my-8">
+        
         <div>
           <h2 className="text-cyan-500 text-xl ml-2 font-semibold">
             Languages:
@@ -79,7 +81,7 @@ const MySkill = () => {
           </div>
         </div>
         <div>
-          <Lottie options={defaultOptions} height={400} width={320} />
+            <Lottie options={defaultOptions} height={400} width={310} />
         </div>
       </div>
     </div>

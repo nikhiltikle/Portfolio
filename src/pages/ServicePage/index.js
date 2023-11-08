@@ -25,10 +25,10 @@ const ServicePage = () => {
   }, [inView, animation]);
 
   return (
-    <div className="py-20 parent"
+    <div className="mx-2 parent my-16"
     >
       <motion.div
-        className="mb-12"
+        className="mb-6"
         initial="hidden"
         animate={viewDiv && "visible"}
         variants={headingAnimation}
@@ -53,7 +53,7 @@ const ServicePage = () => {
             className={`${service.id % 2 === 0
               ? "bg-accent shadow-lg"
               : "bg-[#313131] shadow-md"
-              } rounded-lg p-6 hover:shadow-primary cursor-pointer duration-300`}
+              } rounded-lg p-3 hover:shadow-primary cursor-pointer duration-300`}
           >
             <div className="mb-4 text-center">
               <span className="inline-block text-5xl text-primary">

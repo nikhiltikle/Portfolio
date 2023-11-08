@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='parent pt-6 pb-24 mt-4'>
+      <div className='parent my-16 pt-12'>
         <motion.div
           initial='hidden'
           animate={viewDiv && 'visible'}
@@ -84,9 +84,9 @@ const Contact = () => {
             animate={viewDiv && 'visible'}
             variants={contactAnimation}
           >
-            <h2 className='text-2xl ml-2 font-medium'>Contact Me</h2>
+            <h2 className='text-2xl ml-2 mt-8 font-medium'>Contact Me</h2>
             <form ref={form} onSubmit={handleSend}>
-              <div className='grid grid-cols-1 w-full lg:grid-cols-2 lg:gap-6'>
+              <div className='grid grid-cols-1 mx-2 lg:grid-cols-2 lg:gap-6'>
                 <input
                   className='input-field'
                   type='text'
@@ -104,23 +104,25 @@ const Contact = () => {
                   required
                 />
               </div>
-              <input
-                className='input-field'
-                type='text'
-                name='subject'
-                id='subject'
-                placeholder='Subject'
-                required
-              />
-              <textarea
-                className='input-field ml-2'
-                name='message'
-                id='message'
-                cols='30'
-                rows='5'
-                placeholder='Message'
-                required
-              ></textarea>
+              <div className='mx-2'>
+                <input
+                  className='input-field'
+                  type='text'
+                  name='subject'
+                  id='subject'
+                  placeholder='Subject'
+                  required
+                />
+                <textarea
+                  className='input-field ml-2'
+                  name='message'
+                  id='message'
+                  cols='30'
+                  rows='5'
+                  placeholder='Message'
+                  required
+                ></textarea>
+              </div>
               <button
                 type='submit'
                 value='Send Message'
@@ -139,7 +141,7 @@ const Contact = () => {
             animate={viewDiv && 'visible'}
             variants={contactAnimation}
           >
-            <h2 className='text-2xl font-medium ml-2'>Contact Info</h2>
+            <h2 className='text-2xl font-medium ml-2 mt-4 md:mt-8'>Contact Info</h2>
             <div className='flex items-center my-6 ml-2'>
               <FaUserAlt className='text-2xl mr-8 hover:text-primary cursor-pointer duration-300'></FaUserAlt>
               <h3 className='font-medium text-primary'>Nikhil Tikle</h3>
