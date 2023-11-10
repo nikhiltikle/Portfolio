@@ -1,14 +1,6 @@
 import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import React, { Suspense } from 'react';
-import {
-  NotFound,
-  Loader,
-  ScrollToTop,
-  Navbar,
-  Footer,
-  MernBlogRepair,
-  EmployeeSalaryManagementRepair,
-} from './components';
+import { NotFound, Loader, ScrollToTop, Navbar, Footer } from './components';
 
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -27,7 +19,7 @@ function App() {
       <ScrollToTop />
       {isFalse || <Navbar />}
       <Suspense fallback={<Loader />}>
-        <div className='grow'>
+        <div className="grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -37,11 +29,6 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate replace to="/404" />}></Route>
-            <Route path="/mern-blog" element={<MernBlogRepair />} />
-            <Route
-              path="/employee-salary-management"
-              element={<EmployeeSalaryManagementRepair />}
-            />
           </Routes>
         </div>
       </Suspense>

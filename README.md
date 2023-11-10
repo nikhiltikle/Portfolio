@@ -1,101 +1,65 @@
-<h1 align ="center" >Nikhil Tikle | Portfolio</h1>
+<h2 align="center">
+  Portfolio Website - v2.0<br/>
+  <a href="https://nikhiltikle.github.io/Portfolio/" target="_blank">https://nikhiltikle.github.io/Portfolio/</a>
+</h2>
+<div align="center">
 
-<h5  align ="center"> 
-Dedicated Front-end developer. Capable to solve working problems. Passionate about learning & development to reach the target. Eager to tackle more complex problems and continue to find ways to maximize user efficiency. My next mission is how to become a Mern stack Developer. I would love to build some Giant Website which will shine myself. <br/> <a href="https://drive.google.com/file/d/16r18tc8RhGEiQoOGTTFvgZ0g46C_oQFe/view?usp=share_link">Resume 💼</a> </h5>
-<br/>
+![Nikhil_tikle_Ui_Preview](https://github.com/nikhiltikle/Portfolio/assets/131239163/472f7d57-1c4b-4af4-b2aa-5e1e86361e43)
 
-- [Configuration and Setup](#configuration-and-setup)
-- [Key Features](#key-features)
-- [Technologies used](#technologies-used)
-- [📸 Screenshots](#screenshots)
-- [Author](#author)
-- [License](#license)
-
-## Configuration and Setup
-
-In order to run this project locally, simply fork and clone the repository or download as zip and unzip on your machine.
-
-- Open the project in your prefered code editor.
-
-In the first terminal
-
-```
-$ cd nikhiltikle-portfolio
-$ npm install
-$ npm run start
-```
-
-## Key Features
-
-- Home
-- About
-- Project
-- Contact
-- Blog
+</div>
 
 <br/>
 
-## Technologies used
 
-This project was created using the following technologies.
+<h3 align="center">
+    🔹
+    <a href="https://github.com/nikhiltikle/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    🔹
+    <a href="https://github.com/nikhiltikle/Portfolio/issues">Request Feature</a>
+</h3>
 
-- [React js ](https://www.npmjs.com/package/react) - JavaScript library that is used for building user interfaces specifically for single-page applications
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom) - To handle routing
-- [Css](https://developer.mozilla.org/en-US/docs/Web/CSS) - For User Interface
-- [React icons](https://react-icons.github.io/react-icons/) -
-  Small library that helps you add icons to your react apps.
-- [Tailwind CSS](https://tailwindcss.com/) - For User Interface
-- [React Hooks ](https://reactjs.org/docs/hooks-intro.html) - For managing and centralizing application state
-- [daisyUI ](https://daisyui.com/docs/changelog/) - For User Interface
+## TL;DR
 
-## Screenshots
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [nikhiltikle](https://github.com/nikhiltikle/Portfolio). Thanks!
 
-![img-1](https://github.com/nikhiltikle/nikhiltikle-portfolio/assets/111676859/825edab2-ff3b-4c24-8a99-7bc2527bb758)
+## Built With
 
----
+My personal <a href="https://nikhiltikle.github.io/Portfolio/" target="_blank">portfolio</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
-![img-2](https://github.com/nikhiltikle/nikhiltikle-portfolio/assets/111676859/b5ed935c-cc42-4d23-a2c7-765e90f198f1)
+This project was built using these technologies.
 
----
+- React.js
+- CSS3
+- VsCode
+- Github Pages
 
-![img-3](https://user-images.githubusercontent.com/111676859/235824165-95c1e6b6-f3df-426e-816a-8c80a91d352d.png)
+## Features
 
----
+**📖 Multi-Page Layout**
 
-![img-4](https://user-images.githubusercontent.com/111676859/235824167-224063d0-624a-4aaf-b27f-f4aa8b668511.png)
+**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
 
----
+**📱 Fully Responsive**
 
-![img-5](https://user-images.githubusercontent.com/111676859/235824168-a1028607-de4c-466a-8527-c05eedb1d6b0.png)
+## Getting Started
 
-## Author
+Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
-- Portfolio: [nikhiltikle](https://nikhiltikle.vercel.app/)
-- Github: [nikhiltikle](https://github.com/nikhiltikle)
-- Sponsor: [nikhiltikle](https://saweria.co/nikhiltikle)
-- Linkedin: [gilnikhiltikle](https://www.linkedin.com/in/gilnikhiltikle/)
-- Email: [nikhiltikle@gmail.com](mailto:nikhiltikle@gmail.com)
+## 🛠 Installation and Setup Instructions
 
-## License
+1. Installation: `npm install`
 
-MIT License
+2. In the project directory, you can run: `npm start`
 
-Copyright (c) 2022 Nikhil Tikle
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Usage Instructions
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Open the project folder and Navigate to `/src/components/`. <br/>
+You will find all the components used and you can edit your information accordingly.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Show your support
+
+Give a ⭐ if you like this website!

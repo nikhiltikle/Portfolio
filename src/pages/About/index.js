@@ -98,7 +98,6 @@ const About = () => {
       <div className="md:mt-4">
         <MySkill />
       </div>
-      {/* Education */}
       <Education />
     </div>
   );
