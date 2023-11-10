@@ -3,7 +3,9 @@
   <a href="https://nikhiltikle.github.io/Portfolio/" target="_blank">https://nikhiltikle.github.io/Portfolio/</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="../Portfolio/public/Nikhil_tikle_Ui_Preview.png"/>
+
+![Nikhil_tikle_Ui_Preview](https://github.com/nikhiltikle/Portfolio/assets/131239163/472f7d57-1c4b-4af4-b2aa-5e1e86361e43)
+
 </div>
 
 <br/>
