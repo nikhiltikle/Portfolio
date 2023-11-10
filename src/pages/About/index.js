@@ -53,7 +53,7 @@ const About = () => {
               transition: { duration: 1, delay: 1.25 },
             }}
           >
-            <h1 className='text-4xl font-semibold -mt-6 mb-4 text-center sm:text-3xl sm:mb-4 md:text-left md:ml-2 md:mt-4'>
+            <h1 className='text-4xl font-semibold -mt-6 mb-4 text-left sm:text-3xl sm:mb-4 md:text-left ml-2 md:mt-4'>
               Nikhil Tikle
             </h1>
             <div className="">

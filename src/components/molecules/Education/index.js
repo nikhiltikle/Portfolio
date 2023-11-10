@@ -27,7 +27,7 @@ const Education = () => {
           />
         </div>
         <div className="mx-auto lg:ml-auto">
-          <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg inline-block w-[300px] hover:shadow-primary duration-300 cursor-pointer">
+          <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg inline-block w-fit md:w-[300px] mx-2 hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-xl font-semibold text-primary">
                 Senior Frontend Developer
@@ -45,7 +45,7 @@ const Education = () => {
               overall stability and performance.
             </p>
           </div>
-          <div className="my-6 md:my-4 md:ml-[190px] p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
+          <div className="my-6 md:my-4 md:ml-[190px] p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-fit md:w-[300px] mx-2 hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-xl font-semibold text-primary">
                 React Developer
@@ -64,7 +64,7 @@ const Education = () => {
               adherence to standards.
             </p>
           </div>
-          <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
+          <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-fit md:w-[300px] mx-2 hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-xl font-semibold text-primary">
                 System Engineer
