@@ -14,7 +14,7 @@ const Resume = () => {
     link.download = "Resume_Nikhil_Tikle.pdf";
     link.click();
   };
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState();
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
@@ -35,16 +35,16 @@ const Resume = () => {
           </div>
 
             <div className="flex justify-center items-center mb-20">
-              <Document file={pdfURL} className="">
+              <Document file={pdfURL} className='mx-4 flex flex-col w-full items-start sm:items-center'>
                 <Page
                   pageNumber={1}
-                  scale={width > 768 ? 1.2 : 0.5}
+                  scale={width > 768 ? 1.0 : 0.5}
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
                 />
                 <Page
                   pageNumber={2}
-                  scale={width > 768 ? 1.2 : 0.5}
+                  scale={width > 768 ? 1.0 : 0.5}
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
                 />
