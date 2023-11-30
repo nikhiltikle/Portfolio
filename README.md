@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://nikhiltikle.github.io/Portfolio/" target="_blank">https://nikhiltikle.github.io/Portfolio/</a>
+  <a href="https://nikhil-tikle-portforlio.netlify.app/" target="_blank">https://nikhil-tikle-portforlio.netlify.app/</a>
 </h2>
 <div align="center">
 
