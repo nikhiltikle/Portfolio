@@ -6,6 +6,19 @@
   height: 400px;
   overflow: hidden;
 }
+
+.card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.expanded-card-text {
+  -webkit-line-clamp:
+   unset;
+}
+
 .item {
   background: transparent;
   position: relative;
@@ -25,7 +38,7 @@
   text-align: center;
   border: 2px solid #ff651c;
   border-radius: 5px;
-  content: "";
+  content: '';
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -58,4 +71,66 @@
   .project_image {
     height: 16rem;
   }
+}
+
+.project-section {
+  position: relative  ;
+  padding-top: 150px  ;
+  padding-bottom: 30px  ;
+  background-image: var(--section-background-color)  ;
+}
+
+.project-card {
+  padding-bottom: 50px  ;
+  padding-left: 25px  ;
+  padding-right: 25px  ;
+  height: auto  ;
+  width: 33.333%;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px #ff651c  ;
+  color: rgb(255, 255, 255)  ;
+  background-color: transparent  ;
+  opacity: 0.9  ;
+  transition: all 0.5s ease 0s  ;
+  height: auto  ;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02)  ;
+  overflow: hidden  ;
+  box-shadow: 0 4px 4px 5px #ff651c  ;
+}
+
+.blog-card {
+  padding-top: 50px  ;
+  padding-bottom: 50px  ;
+  padding-left: 25px  ;
+  padding-right: 25px  ;
+  height: auto  ;
+}
+
+.card-img-top {
+  padding: 20px  ;
+  opacity: 0.8  ;
+  border-radius: 10px  ;
+}
+
+.blog-img {
+  padding: 0px  ;
+  opacity: 0.8  ;
+  border-radius: 0px  ;
+}
+
+.btn:focus {
+  outline: none  ;
+  box-shadow: none  ;
+}
+
+.project-heading {
+  color: white  ;
+  font-size: 2.3em  ;
+  font-weight: 500  ;
+  padding-top: 10px  ;
 }

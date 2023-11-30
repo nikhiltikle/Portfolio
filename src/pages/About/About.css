@@ -14,3 +14,10 @@
 .skillbar-percent {
     color: #FF651C !important;
 }
+
+@media screen and (max-width: 420px) {
+        .about-contact {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+}
