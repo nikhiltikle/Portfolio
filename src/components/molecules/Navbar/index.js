@@ -12,6 +12,7 @@ import { ImBlog } from 'react-icons/im';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
 import '../../../pages/shared/Shared.css';
+import pdf from "../../../assets/Nikhil_CV.pdf";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -35,10 +36,10 @@ export default function Navbar() {
   };
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const pdfURL = 'resume.pdf';
+  // const pdfURL = 'resume.pdf';
   const downloadPDF = () => {
     const link = document.createElement('a');
-    link.href = pdfURL;
+    link.href = pdf;
     link.download = 'Resume_Nikhil_Tikle.pdf';
     link.click();
   };

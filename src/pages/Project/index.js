@@ -35,7 +35,7 @@ const Project = () => {
         style={{ padding: "3rem" }}
       >
         <h3 className="text-center text-neutral">Some of my recent Projects</h3>
-        <h1 className="text-4xl font-semibold text-center">
+        <h1 className="text-4xl font-semibold text-center z-1">
           Featured <span className="text-primary">Projects</span>
         </h1>
         <BottomLine />

@@ -35,7 +35,7 @@ const Service = () => {
         variants={headingAnimation}
       >
         <h3 className="text-center text-neutral">What I Provide</h3>
-        <h1 className="text-4xl font-semibold text-center">
+        <h1 className="text-4xl font-semibold text-center z-1">
           My <span className="text-primary">Services</span>
         </h1>
         <BottomLine />

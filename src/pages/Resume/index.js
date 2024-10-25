@@ -4,13 +4,15 @@ import "../shared/Shared.css";
 import { FaDownload } from "react-icons/fa";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./resume.css";
+import pdf from "../../assets/Nikhil_CV.pdf";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
   const pdfURL = "resume.pdf";
   const downloadPDF = () => {
     const link = document.createElement("a");
-    link.href = pdfURL;
+    link.href = pdf;
     link.download = "Resume_Nikhil_Tikle.pdf";
     link.click();
   };
@@ -35,7 +37,7 @@ const Resume = () => {
           </div>
 
             <div className="flex justify-center items-center mb-20">
-              <Document file={pdfURL} className='mx-4 flex flex-col w-full items-start sm:items-center'>
+              <Document file={pdf} className='mx-4 flex flex-col w-full items-start sm:items-center'>
                 <Page
                   pageNumber={1}
                   scale={width > 768 ? 1.0 : 0.5}

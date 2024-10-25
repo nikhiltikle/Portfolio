@@ -8,6 +8,7 @@ import Lottie from 'react-lottie';
 import coding from '../../../assets/coding.json';
 import '../../../pages/shared/Shared.css';
 import { SecondaryBtn } from '../../../components';
+import pdf from '../../../assets/Nikhil_CV.pdf';
 const Banner = () => {
   const defaultOptions = {
     loop: true,
@@ -20,7 +21,7 @@ const Banner = () => {
   const pdfURL = 'resume.pdf';
   const downloadPDF = () => {
     const link = document.createElement('a');
-    link.href = pdfURL;
+    link.href = pdf;
     link.download = 'Resume_Nikhil_Tikle.pdf';
     link.click();
   };
@@ -63,8 +64,8 @@ const Banner = () => {
           continually enhance my skill set, I eagerly anticipate embracing new
           challenges and further elevating my proficiency in the field.
         </p>
-        <div className="flex items-center justify-center space-x-2 translate-y-[-60%] sm:translate-y-[-0%]">
-          <button className="primary-button" onClick={downloadPDF}>
+        <div className="flex items-center justify-center space-x-2 translate-y-[-60%] sm:translate-y-[-0%] ">
+          <button className="primary-button z-999 cursor-pointer" onClick={downloadPDF}>
             <span>My Resume</span>
             <span>
               <FaDownload />
