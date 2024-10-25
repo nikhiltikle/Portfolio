@@ -18,7 +18,7 @@ const Banner = () => {
       preserveAspectRatio: 'xMidYMid slice',
     },
   };
-  const pdfURL = 'resume.pdf';
+  // const pdfURL = 'resume.pdf';
   const downloadPDF = () => {
     const link = document.createElement('a');
     link.href = pdf;

@@ -9,7 +9,7 @@ import pdf from "../../assets/Nikhil_CV.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
-  const pdfURL = "resume.pdf";
+  // const pdfURL = "resume.pdf";
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = pdf;
