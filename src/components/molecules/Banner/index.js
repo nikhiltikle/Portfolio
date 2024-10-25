@@ -8,7 +8,8 @@ import Lottie from 'react-lottie';
 import coding from '../../../assets/coding.json';
 import '../../../pages/shared/Shared.css';
 import { SecondaryBtn } from '../../../components';
-import pdf from '../../../assets/Nikhil_CV.pdf';
+import pdf from "../../../assets/Nikhil Tikle senior forntend resume.pdf";
+
 const Banner = () => {
   const defaultOptions = {
     loop: true,

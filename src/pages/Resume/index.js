@@ -4,7 +4,7 @@ import "../shared/Shared.css";
 import { FaDownload } from "react-icons/fa";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./resume.css";
-import pdf from "../../assets/Nikhil_CV.pdf";
+import pdf from "../../assets/Nikhil Tikle senior forntend resume.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
